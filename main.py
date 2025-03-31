@@ -31,7 +31,7 @@ def main():
                     x += 1
                 if event.key == pygame.K_DOWN and not check_collision(board, piece, x, y + 1):
                     y += 1
-                if event.key == pygame.K_SPACE:  # Rotaciona a peça ao apertar espaço
+                if event.key == pygame.K_SPACE:
                     new_piece = rotate_piece(piece)
                     if not check_collision(board, new_piece, x, y):
                         piece = new_piece
